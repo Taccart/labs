@@ -1,1 +1,1 @@
-#./lab07-azure-costs
+# Lab07 Contrôle des coûts
