@@ -21,4 +21,5 @@ Image a utiliser : [`jupyter/all-spark-notebook`](https://hub.docker.com/r/jupyt
 ```
 
 ## Conclusion
-...
+- Quelles possibilités ?
+- Quelles limites ?

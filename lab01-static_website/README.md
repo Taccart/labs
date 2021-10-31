@@ -10,4 +10,5 @@
 4. Votre serveur web publique sera disponible en minutes.
 
 ## Conclusion
-...
+- Quelles possibilités ?
+- Quelles limites ?
