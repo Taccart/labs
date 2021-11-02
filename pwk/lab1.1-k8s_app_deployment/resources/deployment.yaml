@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flaskdemo-deployment
+spec:
+  selector:
+    matchLabels:
+      app: flaskdemo
+  replicas: 4 # Update the replicas from 2 to 4
+  template:
+    metadata:
+      labels:
+        app: flaskdemo
+    spec:
+      containers:
+        - name: flaskdemo
+          image: <votreimage>
+          ports:
+            - containerPort: 80
+

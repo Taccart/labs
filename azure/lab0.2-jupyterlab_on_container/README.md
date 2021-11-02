@@ -1,4 +1,4 @@
-# Lab02 Execution d'une image docker avec Container Instance
+# Lab0.2 Execution d'une image docker avec Container Instance
 Scenario : vous avez travaillez sur votre PC dans un Spark Notebooks mais les capacités de votre PC ne suffisent pas...
 
 Vous allez deployer l' image de [Jupyterlab](https://jupyter.org/) dans Azure Container Instance.

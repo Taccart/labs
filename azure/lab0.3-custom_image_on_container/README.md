@@ -1,4 +1,4 @@
-# Lab03
+# Lab0.3
 Creation et deploiment d'une image and Azure Container Instance
 Nous avons utilisé dans un lab précédent une image _publique_ (jupyterlab), stockée sur DockerHub.
 Dans un contexte professionel, votre entreprise préferera peut-etre garder ses images dans des _repositories_ privées. 
@@ -9,7 +9,7 @@ Nous allons voir comment créer l'image, la publier sur une container repository
 
 
 ## Contruction de l'image d'un serveur web Python Flask
-Assumant que vous avez installé Docker ou Podman sur votre PC :
+Supposant vous avez Docker ou Podman sur votre PC :
 1. constuire l'image avec `docker build -t flaskdemo .`. Si tout va bien, votre image est disponible dans votre repository locale (sur votre PC).
 1. executer l'image avec `docker run --rm -p 8080:80 flaskdemo` 
 1. ouvrez les pages pour constater le foncionnement correct du serveur web.

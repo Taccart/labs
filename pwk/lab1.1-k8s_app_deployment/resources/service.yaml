@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: flaskdemoservice
+spec:
+  ports:
+    - port: 80
+  selector:
+    app: flaskdemo
+  clusterIP: None

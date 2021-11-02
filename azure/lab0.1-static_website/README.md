@@ -1,4 +1,4 @@
-# Lab01 : création d'un site web statique avec Azure
+# Lab0.1 : création d'un site web statique avec Azure
 
 
 ## Etapes
