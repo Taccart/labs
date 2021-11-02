@@ -1,11 +1,17 @@
 # Labs
-Les labs ont étés construits sur une machine Linux (Ubuntu), avec une installation de Docker.
+Les labs ont étés construits sur une machine Linux (Ubuntu), avec docker installé.
 
-1. [Website statique](./lab01-static_website)
-2. [Exécution d'une image publique dans Azure Container](./lab02-jupyterlab_on_container)
-3. [Création, déploiement et utilisation d'une image privée dans Azure Container](./lab03-custom_image_on_container)
-4. [Utilisation d'une image privée dans Azure Kubernetes Service](./lab04-App_in_pod)
-5. [Amélioration du déploiement - Kubernetes Deployment](./lab05-kubernetes_deployment)
-6. [Kubernetes Probes](./lab06-kubernetes_probes)
-7. [Kubernetes Horizontal Pod Autoscale](./lab07-kubernetes_scaling)
-8. [azure-costs](./lab08-azure-costs)
+# Labs sur Azure
+1. [Création d'un website statique sur Azure](./azure/lab0.1-static_website)
+2. [Exécution d'une image publique dans Azure Container](./azure/lab0.2-jupyterlab_on_container)
+3. [Création, déploiement et utilisation d'une image privée dans Azure Container](./azure/lab0.3-custom_image_on_container)
+4. [Couts](./azure/lab0.4-azure-costs)
+# Lab sur kubernetes avec Play-With-Kubernetes
+1. [Création, et déploiement d'une image privée dans un pod](./pwk/lab1.0-k8s_app_pod)
+2. [Kubernetes Deployment](./pwk/lab1.1-k8s_app_deployment)
+3. [Kubernetes Probes](./pwk/lab1.2-kubernetes_probes)
+4. [Kubernetes Horizontal Pod Autoscale](./pwk/lab1.3-kubernetes_scaling)
+
+
+A propos de Kubernetes : vous trouverez de quoi aller plus loin chez [workshops de play-with-kubernetes.com]( 
+https://training.play-with-kubernetes.com/kubernetes-workshop/)
