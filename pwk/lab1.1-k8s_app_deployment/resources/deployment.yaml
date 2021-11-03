@@ -1,20 +1,28 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flaskdemo-deployment
+  name: flaskdemo-app
+  labels:
+    app: flaskdemo
 spec:
   selector:
     matchLabels:
-      app: flaskdemo
-  replicas: 4 # Update the replicas from 2 to 4
+      app: flaskdeamoapp
+  replicas: 2
   template:
     metadata:
       labels:
-        app: flaskdemo
+        app: flaskdemoapp
     spec:
       containers:
         - name: flaskdemo
-          image: <votreimage>
+          image: <VOTRE IMAGE>
           ports:
             - containerPort: 80
-
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "256Mi"
+              cpu: "2500m"

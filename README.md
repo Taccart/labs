@@ -6,6 +6,7 @@ Les labs ont étés construits sur une machine Linux (Ubuntu), avec docker insta
 2. [Exécution d'une image publique dans Azure Container](./azure/lab0.2-jupyterlab_on_container)
 3. [Création, déploiement et utilisation d'une image privée dans Azure Container](./azure/lab0.3-custom_image_on_container)
 4. [Couts](./azure/lab0.4-azure-costs)
+
 # Lab sur kubernetes avec Play-With-Kubernetes
 1. [Création, et déploiement d'une image privée dans un pod](./pwk/lab1.0-k8s_app_pod)
 2. [Kubernetes Deployment](./pwk/lab1.1-k8s_app_deployment)

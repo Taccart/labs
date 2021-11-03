@@ -1,0 +1,10 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+spec:
+  maxReplicas: 10 # limite supérieure autorisée
+  minReplicas: 2  # limite inférieure autorisée
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: flaskdemo-app
+  targetCPUUtilizationPercentage: 50 # Limite de CPU pour le scale up ou scale down

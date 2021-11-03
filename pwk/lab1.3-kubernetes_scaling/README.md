@@ -8,19 +8,16 @@ Il est toutefois généralement plus interessant de mettre en place de la mise a
 Ceci peut se faire manuellement avec la commande 'autoscale' : 
 `kubectl autoscale deployment flaskDemoDeployment --cpu-percent=50 --min=3 --max=10`
 
-Ou, mieux encore : ajouter la demande dans le deployment lui meme
-```
-...
-apiVersion: autoscaling/v1
-kind: HorizontalPodAutoscaler
-spec:
-  maxReplicas: 10 # limite supérieure autorisée
-  minReplicas: 3  # limite inférieure autorisée
-  scaleTargetRef:
-    apiVersion: apps/v1
-    kind: Deployment
-    name: flaskDemoDeployment
-  targetCPUUtilizationPercentage: 50 # Limite de CPU pour le scale up ou scale down
-```
+Ou, mieux encore : ajouter la demande dans le deployment lui meme: Kubernetes est capable de le faire avec cette formule:
+> `desiredReplicas = ceil[currentReplicas * ( currentMetricValue / desiredMetricValue )]`
 
-Pour aller plus loin, consultez les possibilités de Kubernetes : [horizontal-pod-autoscale](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/)
+Pour aller plus loin, consultez les possibilités de Kubernetes : [horizontal pod autoscale](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/)
+
+## Etapes
+
+1. Deployez le Horizontal Pod Autoscaler [hpa.yaml](./resources/hpa.yaml).
+2. lancez des appels en boucle sur un pod
+```
+while(true); do curl <POD IP>/hello/test;done
+```
+vérifiez 
