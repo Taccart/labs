@@ -1,9 +1,9 @@
 # A propos de Kubernetes
 
 
-## cluster architecture
-Un master, qui dans notre contexte est en charge de la collection de services pour le cluster (serveur API, scheduler, controller manager, etcd...)
-Des nodes, qui on l'agent kubelet, le kube-proxy pour le reseau et l'engine de conteneur. On encore parfois le nom de “minions” pour les nodes.
+## Cluster architecture
+* Un master, qui dans notre contexte est en charge de la collection de services pour le cluster (serveur API, scheduler, controller manager, etcd...)
+* Des nodes, qui on l'agent kubelet, le kube-proxy pour le reseau et l'engine de conteneur. On encore parfois le nom de “minions” pour les nodes.
 
 ## kubernetes resources
 Les resources Kubernetes sont organisées en `type` ou `Kind` dans l'API.
