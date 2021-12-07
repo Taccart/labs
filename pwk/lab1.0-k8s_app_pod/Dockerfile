@@ -1,4 +1,4 @@
-FROM python:3.7-alpine
+FROM ubuntu
 # Cette image docker sert de demonstration pour le lab04.
 # Ce n'est PAS une image destinée a une production ! :)
 RUN apt-get update -y && \
