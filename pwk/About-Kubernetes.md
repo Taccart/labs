@@ -19,3 +19,10 @@ La liste exhaustive des resources est visible via `kubectl get`.
 ## Aller plus loin
 Essayez le [training play-with-kubernetes : kubernetes-workshop](https://training.play-with-kubernetes.com/kubernetes-workshop/)
 ou, pour aller plus loin, l'**excellent tutorial de kubernetes.io [kubernetes basics](https://kubernetes.io/fr/docs/tutorials/kubernetes-basics/)**
+[training play-with-kubernetes : kubernetes-workshop](https://training.play-with-kubernetes.com/kubernetes-workshop/)
+
+
+## Kubernetes minimalistes
+Pour tester chez vous, pour des micro projets sur raspberrypi, vous pouvez utiliser
+[K3S](https://k3s.io/)
+[minikube](https://kubernetes.io/fr/docs/setup/learning-environment/minikube/)
