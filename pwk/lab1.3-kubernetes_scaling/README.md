@@ -20,4 +20,5 @@ Pour aller plus loin, consultez les possibilités de Kubernetes : [horizontal po
 ```
 while(true); do curl <POD IP>/hello/test;done
 ```
-vérifiez 
+
+Vérifiez l'évolution du nombre de replicas. 
