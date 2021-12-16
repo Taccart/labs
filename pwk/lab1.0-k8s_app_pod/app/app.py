@@ -1,6 +1,7 @@
 from flask import render_template
 from flask import Flask
 from markupsafe import escape
+import socket
 import datetime
 
 
@@ -14,7 +15,9 @@ def hello(name=None):
 def home():
    return "Wolfgang est passé ici!"
 
-
+@app.route('/info')
+def info():
+    return socket.gethostname()
 @app.route('/')
 def template():
     return render_template('index.html', nowis=datetime.datetime.now().isoformat())
