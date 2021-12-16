@@ -7,7 +7,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: flaskdeamoapp
+      app: flaskdemoapp
   replicas: 2
   template:
     metadata:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: flaskdemo
-          image: <VOTRE IMAGE>
+          image: docker.io/taccart/flaskdemo:202112 
           ports:
             - containerPort: 80
           resources:
