@@ -1,0 +1,174 @@
+apiVersion: v1
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""
+items:
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "5"
+      description: Miage demo 202112 - application with stupid command probe
+    generation: 10
+    labels:
+      k8s-app: flaskdemo8081-idiotprobe
+    name: flaskdemo8081-idiotprobe
+    namespace: miage
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 1
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        k8s-app: flaskdemo8081-idiotprobe
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          k8s-app: flaskdemo8081-idiotprobe
+        name: flaskdemo8081-idiotprobe
+      spec:
+        containers:
+        - image: docker.io/taccart/flaskdemo:202112
+          imagePullPolicy: Always
+          livenessProbe:
+            exec:
+              command:
+              - /dummyProbe.sh
+              - "0"
+            failureThreshold: 3
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          name: flaskdemo8081-idiotprobe
+          resources:
+            limits:
+              cpu: "1"
+              memory: 250Mi
+            requests:
+              cpu: 100m
+              memory: 25Mi
+          securityContext:
+            privileged: false
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "6"
+      description: 'Miage demo 202112 - application with http get probe '
+    labels:
+      k8s-app: flaskdemo8080-goodprobe
+    name: flaskdemo8080-goodprobe
+    namespace: miage
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 1
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        k8s-app: flaskdemo8080-goodprobe
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          k8s-app: flaskdemo8080-goodprobe
+        name: flaskdemo8080-goodprobe
+      spec:
+        containers:
+        - image: docker.io/taccart/flaskdemo:202112
+          imagePullPolicy: Always
+          livenessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /sleep/0
+              port: 80
+              scheme: HTTP
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 5
+          name: flaskdemo8080-goodprobe
+          resources:
+            limits:
+              cpu: "1"
+              memory: 250Mi
+            requests:
+              cpu: 100m
+              memory: 25Mi
+          securityContext:
+            privileged: false
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "3"
+      description: 'Miage demo 202112 - application with autoscaling '
+    labels:
+      k8s-app: flaskdemo8082-autoscale
+    name: flaskdemo8082-autoscale
+    namespace: miage
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 10
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        k8s-app: flaskdemo8082-autoscale
+    strategy:
+      rollingUpdate:
+        maxSurge: 25%
+        maxUnavailable: 25%
+      type: RollingUpdate
+    template:
+      metadata:
+        annotations:
+          description: 'Miage demo 202112 - application with autoscaling '
+        creationTimestamp: null
+        labels:
+          k8s-app: flaskdemo8082-autoscale
+        name: flaskdemo8082-autoscale
+      spec:
+        containers:
+        - image: docker.io/taccart/flaskdemo:202112
+          imagePullPolicy: Always
+          name: flaskdemo8082-autoscale
+          resources:
+            limits:
+              cpu: "1"
+              memory: 250Mi
+            requests:
+              cpu: 100m
+              memory: 25Mi
+          securityContext:
+            privileged: false
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30

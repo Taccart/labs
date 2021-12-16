@@ -1,0 +1,1 @@
+autoscale deployment  flaskdemo8082-autoscale  --cpu-percent=20 --min=1 --max=10 -n miage
