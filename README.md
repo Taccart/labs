@@ -16,3 +16,6 @@ Les labs ont étés construits sur une machine Linux (Ubuntu), avec docker insta
 
 A propos de Kubernetes : vous trouverez de quoi aller plus loin chez [workshops de play-with-kubernetes.com]( 
 https://training.play-with-kubernetes.com/kubernetes-workshop/)
+
+Creator: Thierry Accart
+
