@@ -11,7 +11,11 @@ Notes : index.html se situe dans le dossier /src de votre nouveu repo
 3. Ouvrez [Azure Portal](https://portal.azure.com)
 4. Créez une resource  [Static Web Apps](https://docs.microsoft.com/fr-fr/azure/static-web-apps/) de nom : lab01staticwebsite
 5. Entrez votre Resource Group puis votre github, le repo lab0.1-static_website (branch main)  et app location/Output Location : ./src
-![Lab1StaticWebCreateRessource](https://user-images.githubusercontent.com/26376087/200795413-dca28fb8-db16-4c36-b6b4-916742b69e59.PNG)
+<img
+  src="https://user-images.githubusercontent.com/26376087/200795413-dca28fb8-db16-4c36-b6b4-916742b69e59.PNG"
+  alt="Alt text"
+  title="Optional title"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
 6. Allez sur Next : Tags et entrez owner en nom et sa valeur :
 ![TagRessource](https://user-images.githubusercontent.com/26376087/200796963-747f387a-8e26-425f-85d7-6ff6062888c4.PNG)
 7. Review + Create puis Create
