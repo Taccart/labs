@@ -8,17 +8,16 @@ Image a utiliser : [`jupyter/all-spark-notebook`](https://hub.docker.com/r/jupyt
 
 ## Etapes
 1. Ouvrez votre resource group dans [Azure Portal](https://portal.azure.com)
-2. Créez un resource *Container Instance*
-```
-  Image type : Public
-  Image: jupyter/all-spark-notebook
-  OS type: Linux
+2. Créez un resource *Container Instances*
+3. Mettre le nom : lab02, Image source : Other registry et image : jupyter/all-spark-notebook
 
-  Networking type: Public
-  Ports : 80 (TCP), 8080 (TCP)
+<img src="https://user-images.githubusercontent.com/26376087/200858183-9ef045aa-650e-47a5-8ed6-0455ffbfaa70.PNG" width=500px>
 
-  Restart policy: On failure
-```
+4. Next : Networking, DNS name label : label02 et port 8080 TCP
+
+<img src="https://user-images.githubusercontent.com/26376087/200856242-c103ae3f-dcf5-44f7-abef-a432f0326d9b.PNG" width=500px>
+
+5. Review and Create, attendez quelques minutes et l'instance est lancé
 
 ## Conclusion
 - Quelles possibilités ?
