@@ -15,7 +15,7 @@ Notes : index.html se situe dans le dossier /src de votre nouveu repo
   src="https://user-images.githubusercontent.com/26376087/200795413-dca28fb8-db16-4c36-b6b4-916742b69e59.PNG"
   alt="Alt text"
   title="Optional title"
-  style="display: inline-block; margin: 0 auto; size: 100px">
+  margin: 0 auto; size: 100px">
 6. Allez sur Next : Tags et entrez owner en nom et sa valeur :
 ![TagRessource](https://user-images.githubusercontent.com/26376087/200796963-747f387a-8e26-425f-85d7-6ff6062888c4.PNG)
 7. Review + Create puis Create
