@@ -13,6 +13,8 @@ Les labs ont étés construits sur une machine Linux (Ubuntu), avec docker insta
 3. [Kubernetes Probes](./pwk/lab1.2-kubernetes_probes)
 4. [Kubernetes Horizontal Pod Autoscale](./pwk/lab1.3-kubernetes_scaling)
 
+Si Play-With-Kubernetes ne fonctionne pas :
+https://kubernetes.io/docs/tutorials/kubernetes-basics/
 
 A propos de Kubernetes : vous trouverez de quoi aller plus loin chez [workshops de play-with-kubernetes.com]( 
 https://training.play-with-kubernetes.com/kubernetes-workshop/)
