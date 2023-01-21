@@ -12,9 +12,9 @@ Parmi toutes les resources on trouve, entre autres, des
 * `pod`: les groupes de conteneur qui s'execute ensemble sur lesun pod.
 * `service`: les endpoint reseau pour les connection des conteneurs
 * `namespace`: les groupes de resources permettant un certain niveau d'isolation.
-`secret` pour stocker des données sensibles a passer aux conteneurs.
+* `secret` pour stocker des données sensibles a passer aux conteneurs.
 * ...
-La liste exhaustive des resources est visible via `kubectl get`.
+La liste des resources est visible via `kubectl api-resources`
 
 ## Aller plus loin
 Essayez le [training play-with-kubernetes : kubernetes-workshop](https://training.play-with-kubernetes.com/kubernetes-workshop/)
