@@ -13,7 +13,7 @@ Image a utiliser : [`jupyter/all-spark-notebook`](https://hub.docker.com/r/jupyt
 
 <img src="https://user-images.githubusercontent.com/26376087/200858183-9ef045aa-650e-47a5-8ed6-0455ffbfaa70.PNG" width=500px>
 
-4. Next : Networking, DNS name label : label02 et port 8080 TCP
+4. Next : Networking, DNS name label : label02 et **port 8888** TCP
 
 <img src="https://user-images.githubusercontent.com/26376087/200856242-c103ae3f-dcf5-44f7-abef-a432f0326d9b.PNG" width=500px>
 
