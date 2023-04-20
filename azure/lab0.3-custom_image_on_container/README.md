@@ -9,7 +9,7 @@ Nous allons voir comment créer l'image, la publier sur une container repository
 
 
 ## Contruction de l'image d'un serveur web Python Flask
-Supposant vous avez Docker ou Podman sur votre PC :
+Supposant vous avez **Docker ou Podman** sur votre PC :
 1. constuire l'image avec `docker build -t flaskdemo .`. Si tout va bien, votre image est disponible dans votre repository locale (sur votre PC).
 1. executer l'image avec `docker run --rm -p 8080:80 flaskdemo` 
 1. ouvrez les pages pour constater le foncionnement correct du serveur web.
