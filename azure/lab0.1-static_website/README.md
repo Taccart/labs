@@ -3,19 +3,19 @@
 
 ## Etapes
 
-1. Créer un repo github avec votre compte git pour votre page web static avec le [Generateur Vanilla](https://github.com/staticwebdev/vanilla-basic/generate)
-2. Donner le nom : lab0.1-static_website
+1.  avec le [Generateur Vanilla](https://github.com/staticwebdev/vanilla-basic/generate), créez un r**epo Github** avec votre compte git pour votre page web static
+2. Donner le nom : `lab0.1-static_website`
 
-Notes : index.html se situe dans le dossier /src de votre nouveau repo
+Notes : index.html se situe dans le dossier `/src` de votre nouveau repo.
 
 3. Ouvrez [Azure Portal](https://portal.azure.com)
-4. Créez une resource  [Static Web Apps](https://docs.microsoft.com/fr-fr/azure/static-web-apps/) de nom : lab01staticwebsite
-5. Entrez votre Resource Group puis votre github, le repo lab0.1-static_website (branch main)  et app location/Output Location : ./src
+4. Créez une resource  [Static Web Apps](https://docs.microsoft.com/fr-fr/azure/static-web-apps/) de nom : `lab01staticwebsite`
+5. Entrez votre Resource Group puis votre github, le repo `lab0.1-static_website` (branch main)  et **app location/Output Location** : `./src` 
+__Attention : le build est de type HTML__
 <img
   src="https://user-images.githubusercontent.com/26376087/200795413-dca28fb8-db16-4c36-b6b4-916742b69e59.PNG"
      width=500px>
 6. Allez sur Next : Tags et entrez owner en nom et sa valeur :
-
 <img
   src="https://user-images.githubusercontent.com/26376087/200796963-747f387a-8e26-425f-85d7-6ff6062888c4.PNG"
      width=500px>
